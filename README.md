@@ -65,11 +65,9 @@ Feel free to explore the repository and reach out if you have any questions or s
 
 ---
 
-**Author**: [Your Name]  
-**Date**: [Submission Date]  
-**Contact**: [Your Contact Information]
+**Contributors**:
+1. Steve Marcello Liem - https://github.com/steveee27
+2. Marvel Martawidjaja - https://github.com/marvelm69
+3. Matthew Lefrandt - https://github.com/MatthewLefrandt
 
 ---
-
-Let's harness the power of big data for a better tomorrow!
-```
