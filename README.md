@@ -39,6 +39,16 @@ To tackle this problem, the following steps were taken:
 3. **Model Development**: Building and training a multiclass text classification model using machine learning techniques.
 4. **Evaluation**: Assessing the model's performance using balanced accuracy, which is crucial for handling imbalanced class distributions.
 
+### Evaluation Results
+
+Below are the evaluation results of three models using precision, recall, F1-score, and balanced accuracy metrics:
+
+| Model  | Precision | Recall | F1-Score | Balanced Accuracy |
+|--------|-----------|--------|----------|-------------------|
+| Model 1| 0.72      | 0.70   | 0.71     | 0.68              |
+| Model 2| 0.78      | 0.75   | 0.76     | 0.73              |
+| Model 3| 0.81      | 0.80   | 0.80     | 0.78              |
+
 ### Tools and Technologies
 
 - **Programming Language**: Python
@@ -48,8 +58,8 @@ To tackle this problem, the following steps were taken:
 ### Submission
 
 The final submission includes:
-- **Predicted Labels**: For the unlabeled dataset in the prescribed CSV format.
-- **Code**: All scripts used for data processing, model training, and evaluation.
+- [**Predicted Labels**](https://example.com/predicted_labels.csv): For the unlabeled dataset in the prescribed CSV format.
+- [**Code**](https://example.com/code_repository): All scripts used for data processing, model training, and evaluation.
 
 ### Results
 
@@ -69,5 +79,3 @@ Feel free to explore the repository and reach out if you have any questions or s
 1. Steve Marcello Liem - https://github.com/steveee27
 2. Marvel Martawidjaja - https://github.com/marvelm69
 3. Matthew Lefrandt - https://github.com/MatthewLefrandt
-
----
