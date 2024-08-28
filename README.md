@@ -103,6 +103,6 @@ Feel free to explore the repository and reach out if you have any questions or s
 ---
 
 **Contributors**:
-1. Steve Marcello Liem - https://github.com/steveee27
-2. Marvel Martawidjaja - https://github.com/marvelm69
-3. Matthew Lefrandt - https://github.com/MatthewLefrandt
+1. [Steve Marcello Liem](https://github.com/steveee27)
+2. [Marvel Martawidjaja](https://github.com/marvelm69)
+3. [Matthew Lefrandt](https://github.com/MatthewLefrandt)
