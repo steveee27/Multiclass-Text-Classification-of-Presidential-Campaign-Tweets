@@ -1,5 +1,18 @@
 # Multiclass Text Classification of Presidential Campaign Tweets
 
+## Introduction
+
+Welcome to the Big Data Challenge (BDC) Satria Data 2024 project repository! This repository showcases a sophisticated project focused on analyzing social media data from Platform X (formerly known as Twitter) during the Indonesian presidential campaign of 2024. The objective is to classify tweets into one of the eight Astagatra categories, which are key components of national resilience:
+
+- **Ideology**: Fundamental values and principles guiding the nation.
+- **Politics**: Government systems, policies, and political processes.
+- **Economy**: Management of economic resources for societal prosperity.
+- **Socio-Cultural**: Social values, cultural norms, and societal life.
+- **Defense and Security**: National defense and internal security.
+- **Natural Resources**: Management and utilization of natural resources.
+- **Geography**: Physical location and environmental conditions affecting life and policy.
+- **Demography**: Population structure, growth, distribution, and dynamics.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -13,19 +26,6 @@
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
-
-## Overview
-
-Welcome to the Big Data Challenge (BDC) Satria Data 2024 project repository! This repository showcases a sophisticated project focused on analyzing social media data from Platform X (formerly known as Twitter) during the Indonesian presidential campaign of 2024. The objective is to classify tweets into one of the eight Astagatra categories, which are key components of national resilience:
-
-- **Ideology**: Fundamental values and principles guiding the nation.
-- **Politics**: Government systems, policies, and political processes.
-- **Economy**: Management of economic resources for societal prosperity.
-- **Socio-Cultural**: Social values, cultural norms, and societal life.
-- **Defense and Security**: National defense and internal security.
-- **Natural Resources**: Management and utilization of natural resources.
-- **Geography**: Physical location and environmental conditions affecting life and policy.
-- **Demography**: Population structure, growth, distribution, and dynamics.
 
 ## Problem Statement
 
