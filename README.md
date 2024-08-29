@@ -1,63 +1,56 @@
 # Multiclass Text Classification of Presidential Campaign Tweets
 
-## Big Data Challenge (BDC) Satria Data 2024 - Preliminary Round Submission
+## Overview
 
-Welcome to my repository for the Big Data Challenge (BDC) Satria Data 2024! This project is my submission for the preliminary round of the BDC competition, a prestigious event that brings together the best talents in data science to solve real-world problems using big data.
+Welcome to the Big Data Challenge (BDC) Satria Data 2024 submission! This repository showcases a sophisticated project focused on analyzing social media data from Platform X (formerly known as Twitter) during the Indonesian presidential campaign of 2024. The objective is to classify tweets into one of the eight Astagatra categories, which are key components of national resilience:
 
-### Project Overview
-
-This project focuses on analyzing social media data from Platform X (formerly known as Twitter) during the Indonesian presidential campaign of 2024. The goal is to classify tweets related to the presidential election into one of the eight Astagatra categories, which are components of national resilience:
-
-- **Ideology**: Fundamental values, principles, and worldviews guiding the nation.
+- **Ideology**: Fundamental values and principles guiding the nation.
 - **Politics**: Government systems, policies, and political processes.
 - **Economy**: Management of economic resources for societal prosperity.
-- **Socio-Cultural**: Social values, cultural norms, and aspects of societal life.
+- **Socio-Cultural**: Social values, cultural norms, and societal life.
 - **Defense and Security**: National defense and internal security.
 - **Natural Resources**: Management and utilization of natural resources.
 - **Geography**: Physical location and environmental conditions affecting life and policy.
 - **Demography**: Population structure, growth, distribution, and dynamics.
 
-### Problem Description
+## Problem Statement
 
-The challenge involves dealing with a massive volume of User Generated Content (UGC) from Platform X. Participants are required to develop a multiclass text classification model to categorize tweets into the above-mentioned Astagatra classes. This involves handling unstructured data, dealing with language complexities, and addressing challenges like ambiguity, sarcasm, and typos.
+This project addresses the challenge of handling a massive volume of User Generated Content (UGC) from Platform X. The task is to develop a robust multiclass text classification model that can categorize tweets into the specified Astagatra classes, despite the complexities of unstructured data, language nuances, ambiguity, sarcasm, and typos.
 
-### Dataset
+## Dataset
 
-The provided dataset includes:
-- **Training Data**: A CSV file containing tweets and their corresponding labels.
-- **Unlabeled Data**: A CSV file for which participants need to predict labels.
+The datasets provided for this project include:
+- **[Training Dataset](https://bit.ly/dataset_bdc_2024)**: A CSV file containing tweets and their corresponding labels.
+- **[Unlabeled Dataset](https://bit.ly/dataset_unlabeled_bdc_2024)**: A CSV file where the goal is to predict the correct labels.
 
-Datasets can be accessed via the following links:
-- [Training Dataset](https://bit.ly/dataset_bdc_2024)
-- [Unlabeled Dataset](https://bit.ly/dataset_unlabeled_bdc_2024)
 
-### Methodology
+## Methodology
 
-To tackle this problem, the following steps were taken:
+Our approach to solving this problem is methodical and comprehensive:
 
-1. **Text Cleansing**: Preprocessing the text data involved several steps to ensure the data was clean and ready for analysis:
-   - **Removing Mentions and Patterns**: Removed Twitter-specific elements like mentions (e.g., `@username`), and patterns such as `re` and `rt` that often appear in retweets.
-   - **Hashtag Preprocessing**: Preprocessed hashtags by treating them appropriately in the context of the text.
+1. **Text Cleansing**: We meticulously cleaned the text data through several steps:
+   - **Removing Mentions and Patterns**: Cleared Twitter-specific elements like `@username`, `re`, and `rt`.
+   - **Hashtag Preprocessing**: Processed hashtags to integrate them into the context of the tweets.
    - **Lowercasing**: Converted all text to lowercase to maintain consistency.
-   - **Removing URLs**: Removed URLs using regular expressions to eliminate links from the text.
-   - **Removing Numbers**: Stripped out all numeric characters to focus solely on the textual content.
-   - **Removing Non-ASCII Characters**: Removed non-ASCII characters to ensure compatibility across different systems.
-   - **Removing Non-Alphanumeric Characters**: Eliminated non-alphanumeric characters (excluding spaces) to clean the text further.
+   - **Removing URLs**: Stripped out URLs using regular expressions.
+   - **Removing Numbers**: Removed numeric characters to focus on the textual content.
+   - **Removing Non-ASCII Characters**: Ensured compatibility by removing non-ASCII characters.
+   - **Removing Non-Alphanumeric Characters**: Cleansed the text further by eliminating non-alphanumeric characters (excluding spaces).
    - **Trimming Excessive Whitespace**: Reduced multiple spaces to a single space for consistency.
    - **Final Cleanup**: Removed any remaining unwanted characters and underscores.
-   - **Removing Stopwords**: Using NLP techniques to filter out common stopwords that do not contribute significantly to the model.
-2. **Data Splitting**: Dividing the dataset into training and testing sets for model evaluation.
-3. **Augmenting Minority Classes**: Applying data augmentation techniques to balance the minority classes in the training data.
-4. **TF-IDF Vectorization**: Converting the textual data into numerical features using TF-IDF vectorization.
-5. **Model Training**: Training various machine learning models including Logistic Regression, SVM, and others.
-6. **Evaluation**: Evaluating the models based on accuracy, balanced accuracy, and other metrics.
-7. **Model Selection**: Choosing the best model, which in this case was Logistic Regression, based on the evaluation metrics.
-8. **Inference**: Using the selected model to perform inference on the unlabeled data.
+   - **Removing Stopwords**: Applied NLP techniques to filter out non-essential stopwords.
+2. **Data Splitting**: Divided the dataset into training and testing sets for a thorough evaluation.
+3. **Augmenting Minority Classes**: Applied data augmentation techniques to balance the minority classes in the training data.
+4. **TF-IDF Vectorization**: Transformed the textual data into numerical features using TF-IDF vectorization.
+5. **Model Training**: Trained multiple machine learning models, including Logistic Regression, SVM, and others.
+6. **Evaluation**: Assessed the models using accuracy, balanced accuracy, and other relevant metrics.
+7. **Model Selection**: Selected Logistic Regression as the best-performing model based on evaluation metrics.
+8. **Inference**: Used the selected model to predict labels for the unlabeled dataset.
 
-### Evaluation Results
-The performance of the model is evaluated based on balanced accuracy. The balanced accuracy is calculated as the average of recall (sensitivity) for each class, providing a fair assessment of model performance, especially with imbalanced data.
+## Evaluation Results
+The models were evaluated on both accuracy and balanced accuracy metrics. The balanced accuracy is calculated as the average of recall (sensitivity) for each class, providing a fair assessment of model performance, especially with imbalanced data.
 
-Below are the evaluation results of three models using accuracy and balanced accuracy metrics:
+Below are the results:
 
 | Model               | Accuracy | Balanced Accuracy |
 |---------------------|----------|-------------------|
@@ -73,7 +66,8 @@ Below are the evaluation results of three models using accuracy and balanced acc
 | Complement NB       | 0.53     | 0.55              |
 | Bernoulli NB        | 0.67     | 0.51              |
 
-### Tools and Technologies
+## Tools and Technologies
+This project was built using the following tools and technologies:
 
 - **Programming Language**: Python
 - **Libraries**: 
@@ -85,24 +79,26 @@ Below are the evaluation results of three models using accuracy and balanced acc
   - `sklearn` (including SVM, KNN, Gradient Boosting, Naive Bayes variants, Logistic Regression, Random Forest, TfidfVectorizer, GridSearchCV, and model evaluation tools)
   - `warnings` for handling warnings
 
-### Submission
+## Submission
 
 The final submission includes:
 - [**Predicted Labels**](https://github.com/steveee27/Multiclass-Text-Classification-of-Presidential-Campaign-Tweets/blob/main/jawaban_penyisihan_bdc_2024.csv): For the unlabeled dataset in the prescribed CSV format.
 - [**Code**](https://github.com/steveee27/Multiclass-Text-Classification-of-Presidential-Campaign-Tweets/blob/main/code.ipynb): All scripts used for data processing, model training, and evaluation.
 
 
-### Acknowledgements
+## License
 
-This project is a part of the Big Data Challenge Satria Data 2024. All problem descriptions and datasets are the property of the Satria Data BDC organizing team. I extend my gratitude to the organizers for providing this challenging and educational opportunity.
+This repository is licensed under the MIT License. You are free to use, modify, and distribute this project with proper attribution. For more details, refer to the [LICENSE](LICENSE) file.
+
+## Acknowledgements
+
+This project is a part of the Big Data Challenge Satria Data 2024. I would like to thank the organizers for providing this challenging and educational opportunity.
 
 ---
 
 Feel free to explore the repository and reach out if you have any questions or suggestions!
 
----
-
-**Contributors**:
-1. [Steve Marcello Liem](https://github.com/steveee27)
-2. [Marvel Martawidjaja](https://github.com/marvelm69)
-3. [Matthew Lefrandt](https://github.com/MatthewLefrandt)
+## Contributors
+- [Steve Marcello Liem](https://github.com/steveee27)
+- [Marvel Martawidjaja](https://github.com/marvelm69)
+- [Matthew Lefrandt](https://github.com/MatthewLefrandt)
