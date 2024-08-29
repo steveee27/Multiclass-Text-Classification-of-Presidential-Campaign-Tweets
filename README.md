@@ -1,5 +1,19 @@
 # Multiclass Text Classification of Presidential Campaign Tweets
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Evaluation Results](#evaluation-results)
+- [Tools and Technologies](#tools-and-technologies)
+- [Submission](#submission)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [Contributing](#contributing)
+- [Contributors](#contributors)
+
 ## Overview
 
 Welcome to the Big Data Challenge (BDC) Satria Data 2024 project repository! This repository showcases a sophisticated project focused on analyzing social media data from Platform X (formerly known as Twitter) during the Indonesian presidential campaign of 2024. The objective is to classify tweets into one of the eight Astagatra categories, which are key components of national resilience:
