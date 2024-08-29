@@ -92,11 +92,11 @@ This repository is licensed under the MIT License. You are free to use, modify, 
 
 ## Acknowledgements
 
-This project is a part of the Big Data Challenge Satria Data 2024. I would like to thank the organizers for providing this challenging and educational opportunity.
+This project is a part of the Big Data Challenge Satria Data 2024. We would like to thank the organizers for providing this challenging and educational opportunity.
 
----
+## Contributing
 
-Feel free to explore the repository and reach out if you have any questions or suggestions!
+While the models developed show promise, the balanced accuracy results are still lower than desired, particularly in handling imbalanced data. We welcome any contributions, whether in the form of improving model performance, experimenting with different techniques, or even just offering suggestions and feedback. Your expertise and creativity could help take this project to the next level. Feel free to fork the repository, submit pull requests, or reach out if you're interested in collaborating!
 
 ## Contributors
 - [Steve Marcello Liem](https://github.com/steveee27)
